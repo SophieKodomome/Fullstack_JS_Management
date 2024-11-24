@@ -83,20 +83,27 @@
                 </ul>
               </ul>
     <h3>Pages & Data to Fetch</h3>
-    <h4>Page Accueil</h4>
-    <h5>Front End</h5>
-    <li>Script</li>
-      <ul>fetch('/getStock')</ul>
-      <ul>fetch('/getCategory')</ul>
-      <ul>fetch('/getMaterial')</ul>
-    <li>Filtre recherche(stock,categorie,materiel)</li>
-    <ul>
-      <li>Tableau liste stock</li>
-      <li>Tableau liste categorie</li>
-      <li>Tableau liste materiel</li>
-    </ul>
-    <h5>Back End</h5>
-    <li>index.js</li>
-    <li>app.get('/getStock')</li>
-    <li>app.get('/getCategory')</li>
-    <li>app.get('/getMaterial')</li>
+      <h4>Page Accueil</h4>
+        <h5>Front End</h5>
+          <li>Script</li>
+          <ul>
+            <li>fetch('/getStock')</li>
+            <li>fetch('/getCategory')</li>
+            <li>fetch('/getMaterial')</li>
+          </ul>
+          <li>Filtre recherche(stock,categorie,materiel)</li>
+          <ul>
+            <li>Tableau liste stock</li>
+            <li>Tableau liste categorie</li>
+            <li>Tableau liste materiel</li>
+            <ul>
+              <li>See Details</li>
+            </ul>
+          </ul>
+        <h5>Back End</h5>
+          <li>index.js</li>
+          <li>app.get('/getStock')</li>
+          <li>app.get('/getCategory')</li>
+          <li>app.get('/getMaterial')</li>
+
+<h2>NB: This list is still is likely to change and be updated</h2>
