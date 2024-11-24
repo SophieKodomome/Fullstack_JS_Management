@@ -27,6 +27,7 @@
     <li>GSAP</li>
     <li>Axios</li>
     <li>FinanceJS</li>
+    <li>Yarn</li>
   </ul>
   <h3>API</h3>
   <ul>
@@ -35,6 +36,7 @@
   </ul>
   <h3>BackEnd</h3>
   <ul>
+    <li>node js</li>
     <li>Postgre</li>
     <li>Prisma</li>
   </ul>
