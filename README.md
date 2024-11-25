@@ -1,5 +1,3 @@
-
-
 # Fullstack_JS_Management
 <h2>Goal:</h2>
 <p>A full stack js application for managing stock &amp; maintenance</p>
