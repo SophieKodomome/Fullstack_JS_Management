@@ -1,0 +1,7 @@
+npm init -y
+npm i express
+npm i --save-dev @types/node
+npm i prisma @prisma/client
+npm i typescript --dev
+npx tsc --init
+npx prisma init
