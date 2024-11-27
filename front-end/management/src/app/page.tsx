@@ -1,41 +1,21 @@
 "use client";
 
-import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import MyNavigationItem from "./components/MyNavigationItem";
+import MyProfileSection from "./components/MyProfileSection";
 
 function App() {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const router = useRouter();
-
-    const handleLogin = () => {
-        setIsLoggedIn(true);
-        // Navigate to the dashboard page programmatically
-        router.push('/dashboard');
-    };
-
-    const handleLogout = () => {
-        setIsLoggedIn(false);
-        // Navigate to the login page programmatically
-        router.push('/login');
-    };
-
-    const goBack = () => {
-        // Navigate back one step in history
-        router.back();
-    };
-
-    return (
-        <div>
-            {isLoggedIn ? (
-                <button onClick={handleLogout}>Logout</button>
-            ) : (
-                <button onClick={handleLogin}>Login</button>
-            )}
-            <button onClick={goBack}>
-                Go Back
-            </button>
-        </div>
-    );
+  return (
+    <main>
+      <aside className=" fixed bg-sky-700 w-48 h-screen py-8">
+        <MyProfileSection id={1} username={"username"} role={"role"}/>
+        <section className="flex flex-col space-y-4 pl-8 pt-8">
+            <MyNavigationItem name={"accueil"}/>
+            <MyNavigationItem name={"analytique"}/>
+            <MyNavigationItem name={"maintenance"}/>
+        </section>
+      </aside>
+    </main>
+  );
 }
 
 export default App;
