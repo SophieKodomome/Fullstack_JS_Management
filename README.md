@@ -48,7 +48,7 @@
             <li>Table status(id,status)</li>
             <li>Table role(id,role,rang)</li>
             <li>Table Materiel(id,nom,id_categorie,date_achat,cout,id_geo_localisation,id_status,duree_de_vie_utile,valeur_residuel)</li>
-            <li>Table utilisateur(id,nom,id_role)</li>
+            <li>Table utilisateur(id,nom,mail,id_role,mot_de_passe)</li>
             <li>Table permission(id,permission,id_role)</li>
             <li>Table historique(id,id_utilisateur,date_evenement,evenementt)</li>
             <li>Table requete(id,requete_sql,id_demande_par,id_approve_par,date)</li>
@@ -83,6 +83,26 @@
                 </ul>
               </ul>
     <h3>Pages & Data to Fetch</h3>
+      <h4>Page Login</h4>
+        <h5>Front End<h5>
+          <li>Script</li>
+          <ul>
+            <li>post('/postUser')</li>
+          </ul>
+          <li>Form</li>
+          <ul>
+            <li>input nom</li>
+            <li>input mot_de_passe</li>
+            <li>bouton ok</li>
+          </ul>
+        <h5>Back End</h5>
+          <li>index.js</li>
+          <li>app.post('/postUser')</li>
+          <ul>
+            <li>check if user exist</li>
+            <li>if exist, send response(user.name,user.role)</li>
+            <li>else,send response("email ou mot de passe incorrect")</li>
+          </ul>
       <h4>Page Accueil</h4>
         <h5>Front End</h5>
           <li>Script</li>
